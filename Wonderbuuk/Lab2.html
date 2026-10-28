@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <h1>My Personal Profile</h1>
+    </header>
+
+    <!-- nav bar -->
+    <nav>
+        <a href="#about">About Me</a> | 
+        <a href="#info">Personal Info</a> | 
+        <a href="#contact">Contact Form</a>
+    </nav>
+
+    <!--intro -->
+    <section id="about">
+        <article>
+            <h2>Welcome to My Page</h2>
+            <p>This is a personal profile page created for CSF3133 Lab Exercise 2.</p>
+        </article>
+    </section>
+
+    <!-- T Section -->
+    <section id="info">
+        <h2>Personal Information</h2>
+        <!-- Table with  3 rows and 3 columns -->
+        <table border="1">
+            <thead>
+                <tr> <!-- 3 rows -->
+                    <th>Name</th><!-- columns -->
+                    <th>Age</th>
+                    <th>Occupation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>James young</td>
+                    <td>25</td>
+                    <td>Web Developer</td>
+                </tr>
+                <tr>
+                    <td>Jane Bishop</td>
+                    <td>42</td>
+                    <td>UI/UX Designer</td>
+                </tr>
+                <tr>
+                    <td>Thomas shelby</td>
+                    <td>35</td>
+                    <td>Human Resourse</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Form Section -->
+    <section id="contact">
+        <h2>User Information Form</h2>
+        <!-- inputs, radio buttons, checkboxes, and submit button -->
+        <form action="#" method="post">
+            
+            <!-- Input: Name -->
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name"><br><br>
+
+            <!-- Input: Email -->
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <!-- Radio Buttons: Gender -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <!-- Checkboxes: Favorite Hobbies -->
+            <label>Favorite Hobbies:</label><br>
+            <input type="checkbox" id="coding" name="hobby" value="Coding">
+            <label for="coding">Reading</label><br>
+            <input type="checkbox" id="reading" name="hobby" value="Reading">
+            <label for="reading">Cooking</label><br>
+            <input type="checkbox" id="gaming" name="hobby" value="Gaming">
+            <label for="gaming">Gaming</label><br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+
+    <!-- <footer> -->
+    <footer>
+        <p>&copy; 2026 My Web Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
