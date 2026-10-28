@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Workshop Schedule and Registration</title>
+</head>
+<body>
+
+<!-- header -->
+    <header>
+        <h1>Schedule and Registration</h1>
+    </header>
+
+    <!-- nav bar -->
+    <nav>
+        <a href="#schedule">Event Schedule</a> | 
+        <a href="#register">Registration</a> | 
+        <a href="#about">About the Event</a>
+    </nav>
+
+    <!--intro -->
+    <section id="about">
+        <h2>About the Event</h2>
+        <p>Hackathons are an exciting way to test your knowledge, 
+            collaborate with other people in your industry, 
+            and be part of an innovative, fast-paced environment. 
+            Explore hackathons, why you should enter one, 
+            and the different types of hackathons.</p>
+
+        <!-- Speaker -->
+        <article>
+            <h3>Keynote Speaker: Dr. Ahmad Razak</h3>
+            <p>Dr. Rizal Bin Jamal is a Senior Data Scientist specializing in Artificial Intelligence. He will present on the future trends of machine learning and software engineering.</p>
+        </article>
+        <!-- Activity -->
+        <article>
+            <h3>Hands-on Web Development Session</h3>
+            <p>This interactive session introduces students to semantic HTML structure and best practices for creating clean, accessible web pages.</p>
+        </article>
+    </section>
+
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <!-- Table-->
+       <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+            <tr>
+                <td>08:30 AM - 09:00 AM</td>
+                <td>Participant Registration</td>
+                <td>Main Lobby</td>
+                <td>Student Committee</td>
+            </tr>
+            <tr>
+                <td>09:00 AM - 10:30 AM</td>
+                <td>Keynote Address: Future of AI</td>
+                <!-- using rowspan for merging -->
+                <td rowspan="2">Auditorium A</td>
+                <td>Dr. Ahmad Razak</td>
+            </tr>
+            <tr>
+                <td>10:30 AM - 12:00 PM</td>
+                <td>Technical Workshop 1: HTML Fundamentals</td>
+                <td>Prof. Siti Aminah</td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 02:00 PM</td>
+                <!-- using colspan for merging -->
+                <td colspan="3">Lunch Break &amp; Networking</td>
+            </tr>
+            <tr>
+                <td>02:00 PM - 04:00 PM</td>
+                <td>Technical Workshop 2: Advanced Web Design</td>
+                <td>Computer Lab 3</td>
+                <td>Mr. Hafiz Wan</td>
+            </tr>
+            <tr>
+                <td>04:00 PM - 05:00 PM</td>
+                <td>Closing Ceremony &amp; Prize Presentation</td>
+                <td>Auditorium A</td>
+                <td>Organizing Committee</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Form Section -->
+    <section id="register">
+        <h2>Registration</h2>
+        <!-- inputs, radio buttons, checkboxes, and submit button -->
+        <form action="register.html" method="post">
+            
+            <!-- Input: Name -->
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name"><br><br>
+
+            <!-- Input: Name -->
+            <label for="metrixno">Matric Number:</label><br>
+            <input type="text" id="metrixno" name="metrixno" placeholder="Enter your Matric Number"><br><br>
+
+            <!-- Input: Email -->
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <!-- Radio Buttons: Year -->
+            <label>Year of Study:</label><br>
+            <input type="radio" id="year1" name="year" value="Year 1">
+            <label for="year1">Year 1</label><br>
+            
+            <input type="radio" id="year2" name="year" value="Year 2">
+            <label for="year2">Year 2</label><br>
+            
+            <input type="radio" id="year3" name="year" value="Year 3">
+            <label for="year3">Year 3</label><br>
+            
+            <input type="radio" id="year4" name="year" value="Year 4">
+            <label for="year4">Year 4</label><br><br>
+
+            <!-- Sessions Choice (Checkboxes) -->
+            <label>Sessions You Wish to Join:</label><br>
+            <input type="checkbox" id="session1" name="sessions[]" value="Keynote Address">
+            <label for="session1">Keynote Address</label><br>
+
+            <input type="checkbox" id="session2" name="sessions[]" value="Workshop 1">
+            <label for="session2">Workshop 1: HTML Fundamentals</label><br>
+
+            <input type="checkbox" id="session3" name="sessions[]" value="Workshop 2">
+            <label for="session3">Workshop 2: Advanced Web Design</label><br>
+
+            <input type="checkbox" id="session4" name="sessions[]" value="Workshop 3">
+            <label for="session4">Workshop 3: Advanced UX/UI Design</label><br><br>
+
+            <!-- Checkboxes: Programme  -->
+            <label for="programme">Programme / Faculty:</label><br>
+            <select id="programme" name="programme">
+                <option value="cs">Computer Science (Software Engineering)</option>
+                <option value="se">Software Engineering</option>
+                <option value="it">Information Technology</option>
+                <option value="it">Computer Science Informative Maritine</option>
+                <option value="math">Financial Mathematics</option>
+            </select><br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+
+
+     <!-- <footer> -->
+    <footer>
+        <p>&copy; 2026 Programming Workshop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
